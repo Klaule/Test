@@ -10,7 +10,7 @@ import tflite_micro_runtime.interpreter as tflite
 from PIL import Image
 
 folder_path = '/home/klaule/Videos/'
-hallo= "Ich bins "
+
 
 if not os.path.exists(folder_path):
     os.makedirs(folder_path)
