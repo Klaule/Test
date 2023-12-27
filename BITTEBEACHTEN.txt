@@ -1,0 +1,11 @@
+Hallo Papa, im Falle eines Reset des Raspberry pi zero musst du folgendes machen, damit die libatomic mit deiner Terminal Session gelinkt wird. 
+
+im terminal bitte folgendes eingeben: 
+
+      nano ~/.bashrc
+
+dann ganz nach unten scrollen und dort diesen command einfuegen:
+
+      export LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1
+      
+dann ganz normal speichern und alles sollte wieder passen:D
